@@ -1,0 +1,190 @@
+CREATE TABLE form_responses (
+    email_address VARCHAR(255) PRIMARY KEY,
+    roll_number VARCHAR(50),
+    full_name VARCHAR(255),
+    gender VARCHAR(10),
+    contact_number VARCHAR(20),
+    date_of_birth DATE,
+    age INT,
+    programme VARCHAR(100),
+    intended_specialization_1 VARCHAR(100),
+    intended_specialization_2 VARCHAR(100),
+    graduation_college_name VARCHAR(255),
+    university_name VARCHAR(255),
+    graduation_college_city VARCHAR(100),
+    graduation_degree VARCHAR(100),
+    graduation_specialization VARCHAR(100),
+    graduation_cgpa DECIMAL(5, 2),
+    graduation_scale VARCHAR(20),
+    graduation_percentage DECIMAL(5, 2),
+    graduation_completion_date VARCHAR(50),
+    graduation_year INT,
+    class12_board VARCHAR(100),
+    class12_stream VARCHAR(100),
+    class12_percentage DECIMAL(5, 2),
+    class12_year INT,
+    class10_board VARCHAR(100),
+    class10_cgpa DECIMAL(5, 2),
+    class10_scale VARCHAR(20),
+    class10_percentage DECIMAL(5, 2),
+    class10_year INT,
+    work_experience VARCHAR(10),
+    total_work_experience_months INT,
+    current_residential_address TEXT,
+    permanent_residential_address TEXT,
+    city_of_residence VARCHAR(100),
+    state_of_residence VARCHAR(100),
+    pin_code VARCHAR(10),
+    father_name VARCHAR(255),
+    father_contact_number VARCHAR(20),
+    mother_name VARCHAR(255),
+    mother_contact_number VARCHAR(20),
+    languages_known TEXT,
+    additional_qualifications TEXT,
+    live_projects TEXT,
+    certifications TEXT,
+    leadership_positions TEXT,
+    other_achievements TEXT,
+    personal_email_id VARCHAR(255),
+    cat_percentile DECIMAL(5, 2),
+    xat_percentile DECIMAL(5, 2),
+    gmat_score DECIMAL(5, 2));
+.....
+INSERT INTO form_responses (
+    email_address, roll_number, full_name, gender, contact_number, date_of_birth, age, programme, 
+    intended_specialization_1, intended_specialization_2, graduation_college_name, university_name, 
+    graduation_college_city, graduation_degree, graduation_specialization, graduation_cgpa, 
+    graduation_scale, graduation_percentage, graduation_completion_date, graduation_year, class12_board, 
+    class12_stream, class12_percentage, class12_year, class10_board, class10_cgpa, class10_scale, 
+    class10_percentage, class10_year, work_experience, total_work_experience_months, 
+    current_residential_address, permanent_residential_address, city_of_residence, state_of_residence, 
+    pin_code, father_name, father_contact_number, mother_name, mother_contact_number, languages_known, 
+    additional_qualifications, live_projects, certifications, leadership_positions, other_achievements, 
+    personal_email_id, cat_percentile, xat_percentile, gmat_score
+) VALUES
+('john.doe@example.com', '12345', 'John Doe', 'Male', '9876543210', '1990-01-01', 34, 'MBA', 
+ 'Finance', 'Marketing', 'XYZ College', 'ABC University', 'City A', 'B.Com', 'Finance', 8.5, 
+ '10', 85.0, 'June 2012', 2012, 'State Board', 'Science', 90.5, 2008, 'CBSE', 9.0, '10', 90.0, 2006, 
+ 'Yes', 24, '123 Current St, City A', '456 Permanent St, City B', 'City A', 'State A', '123456', 
+ 'John Senior', '9876543211', 'Jane Doe', '9876543212', 'English, Hindi', 'Diploma in Management', 
+ 'Project A at Company X', 'Certification A', 'Team Lead at ABC Corp', 'Best Student Award', 
+ 'john.personal@example.com', 85.5, 90.0, 700.0),
+('jane.smith@example.com', '67890', 'Jane Smith', 'Female', '9876543211', '1992-03-12', 32, 'MBA', 
+ 'Marketing', 'HR', 'LMN College', 'DEF University', 'City B', 'BBA', 'Marketing', 8.0, '10', 80.0, 
+ 'May 2014', 2014, 'CBSE', 'Commerce', 88.0, 2010, 'State Board', 8.8, '10', 88.0, 2008, 
+ 'No', 0, '789 Current St, City B', '101 Permanent St, City C', 'City B', 'State B', '654321', 
+ 'Smith Senior', '9876543213', 'Janet Smith', '9876543214', 'English, Spanish', 'Diploma in HR', 
+ 'Project B at Company Y', 'Certification B', 'Project Manager at DEF Corp', 'Top Performer Award', 
+ 'jane.personal@example.com', 80.5, 88.5, 680.0),
+('sam.brown@example.com', '54321', 'Sam Brown', 'Non-binary', '9876543212', '1991-07-23', 33, 'MBA', 
+ 'Operations', 'Finance', 'PQR College', 'GHI University', 'City C', 'B.Sc', 'Operations', 8.7, '10', 
+ 87.0, 'April 2013', 2013, 'ICSE', 'Science', 89.0, 2009, 'CBSE', 9.1, '10', 91.0, 2007, 
+ 'Yes', 36, '234 Current St, City C', '567 Permanent St, City D', 'City C', 'State C', '789123', 
+ 'Brown Senior', '9876543215', 'Samantha Brown', '9876543216', 'English, French', 'Diploma in Operations', 
+ 'Project C at Company Z', 'Certification C', 'Operations Manager at GHI Corp', 'Employee of the Year', 
+ 'sam.personal@example.com', 87.5, 89.0, 710.0),
+('alice.jones@example.com', '98765', 'Alice Jones', 'Female', '9876543213', '1993-11-30', 30, 'MBA', 
+ 'HR', 'Finance', 'STU College', 'JKL University', 'City D', 'B.Com', 'Finance', 8.9, '10', 89.0, 
+ 'March 2015', 2015, 'CBSE', 'Commerce', 91.0, 2011, 'State Board', 8.5, '10', 85.0, 2009, 
+ 'No', 0, '345 Current St, City D', '678 Permanent St, City E', 'City D', 'State D', '456789', 
+ 'Jones Senior', '9876543217', 'Alicia Jones', '9876543218', 'English, German', 'Diploma in Finance', 
+ 'Project D at Company W', 'Certification D', 'HR Manager at JKL Corp', 'Leadership Award', 
+ 'alice.personal@example.com', 89.5, 91.0, 720.0);
+.....
+CREATE TABLE students (
+    email_address VARCHAR(255) PRIMARY KEY,
+    roll_number VARCHAR(50) UNIQUE,
+    full_name VARCHAR(255),
+    gender VARCHAR(10),
+    contact_number VARCHAR(20),
+    date_of_birth DATE,
+    age INT,
+    programme VARCHAR(100),
+    city_of_residence VARCHAR(100),
+    state_of_residence VARCHAR(100),
+    pin_code VARCHAR(10));
+.....
+CREATE TABLE education (
+    roll_number VARCHAR(50) PRIMARY KEY,
+    graduation_college_name VARCHAR(255),
+    university_name VARCHAR(255),
+    graduation_college_city VARCHAR(100),
+    graduation_degree VARCHAR(100),
+    graduation_specialization VARCHAR(100),
+    graduation_cgpa DECIMAL(5, 2),
+    graduation_scale VARCHAR(20),
+    graduation_percentage DECIMAL(5, 2),
+    graduation_completion_date VARCHAR(50),
+    graduation_year INT,
+    FOREIGN KEY (roll_number) REFERENCES students(roll_number));
+.....
+CREATE TABLE schooling (
+    roll_number VARCHAR(50) PRIMARY KEY,
+    class12_board VARCHAR(100),
+    class12_stream VARCHAR(100),
+    class12_percentage DECIMAL(5, 2),
+    class12_year INT,
+    class10_board VARCHAR(100),
+    class10_cgpa DECIMAL(5, 2),
+    class10_scale VARCHAR(20),
+    class10_percentage DECIMAL(5, 2),
+    class10_year INT,
+    FOREIGN KEY (roll_number) REFERENCES students(roll_number));
+.....
+CREATE TABLE work_experience (
+    roll_number VARCHAR(50) PRIMARY KEY,
+    work_experience VARCHAR(10),
+    total_work_experience_months INT,
+    FOREIGN KEY (roll_number) REFERENCES students(roll_number));
+.....
+CREATE TABLE parents (
+    email_address VARCHAR(255) PRIMARY KEY,
+    father_name VARCHAR(255),
+    father_contact_number VARCHAR(20),
+    mother_name VARCHAR(255),
+    mother_contact_number VARCHAR(20),
+    FOREIGN KEY (email_address) REFERENCES students(email_address));
+.....
+CREATE TABLE languages (
+    email_address VARCHAR(255),
+    language VARCHAR(50),
+    PRIMARY KEY (email_address, language),
+    FOREIGN KEY (email_address) REFERENCES students(email_address));
+.....
+CREATE TABLE achievements (
+    email_address VARCHAR(255) PRIMARY KEY,
+    additional_qualifications TEXT,
+    live_projects TEXT,
+    certifications TEXT,
+    leadership_positions TEXT,
+    other_achievements TEXT,
+    FOREIGN KEY (email_address) REFERENCES students(email_address));
+.....
+INSERT INTO students (email_address, roll_number, full_name, gender, contact_number, date_of_birth, age, programme, city_of_residence, state_of_residence, pin_code)
+SELECT email_address, roll_number, full_name, gender, contact_number, date_of_birth, age, programme, city_of_residence, state_of_residence, pin_code FROM form_responses;
+.....
+INSERT INTO education (roll_number, graduation_college_name, university_name, graduation_college_city, graduation_degree, graduation_specialization, graduation_cgpa, graduation_scale, graduation_percentage, graduation_completion_date, graduation_year)
+SELECT roll_number, graduation_college_name, university_name, graduation_college_city, graduation_degree, graduation_specialization, graduation_cgpa, graduation_scale, graduation_percentage, graduation_completion_date, graduation_year FROM form_responses;
+.....
+INSERT INTO schooling (roll_number, class12_board, class12_stream, class12_percentage, class12_year, class10_board, class10_cgpa, class10_scale, class10_percentage, class10_year)
+SELECT roll_number, class12_board, class12_stream, class12_percentage, class12_year, class10_board, class10_cgpa, class10_scale, class10_percentage, class10_year FROM form_responses;
+.....
+INSERT INTO work_experience (roll_number, work_experience, total_work_experience_months)
+SELECT roll_number, work_experience, total_work_experience_months FROM form_responses;
+.....
+INSERT INTO parents (email_address, father_name, father_contact_number, mother_name, mother_contact_number)
+SELECT email_address, father_name, father_contact_number, mother_name, mother_contact_number FROM form_responses;
+.....
+INSERT INTO languages (email_address, language)
+SELECT email_address, TRIM(SUBSTRING_INDEX(SUBSTRING_INDEX(languages_known, ',', numbers.n), ',', -1)) language
+FROM form_responses
+INNER JOIN (SELECT 1 n UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6 UNION SELECT 7 UNION SELECT 8 UNION SELECT 9 UNION SELECT 10) numbers
+ON CHAR_LENGTH(languages_known)
+   -CHAR_LENGTH(REPLACE(languages_known, ',', ''))>=numbers.n-1;
+.....
+INSERT INTO achievements (email_address, additional_qualifications, live_projects, certifications, leadership_positions, other_achievements)
+SELECT email_address, additional_qualifications, live_projects, certifications, leadership_positions, other_achievements FROM form_responses;
+.....
+
+
+
